@@ -16,6 +16,13 @@
   <link rel="stylesheet" href="./styles/themes.css" />
 </head>
 <body class="page">
+  <!-- дискета -->
+  <svg style="display: none">
+    <symbol id="floppy-img" viewBox="0 0 40 40">
+      <path fill="currentColor"
+        d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z" />
+    </symbol>
+  </svg>
 <header class="header content-width content-background-color">
   <div class="logo__page">&lt;/HTML&gt;</div>
   <h1 class="header__title">закрывающий тег</h1>
@@ -631,7 +638,7 @@
   <div class="footer-button">
     <button type="button" class="button button--save" onclick="window['dialog-save'].showModal()" aria-controls="dialog-save">
    <svg class="button__icon dialog__floppy" viewBox="0 0 29 28" xmlns="http://www.w3.org/2000/svg">
-        <use href="./svg/image-diskette.svg#image-diskette" />
+        <use href="#floppy-img" />
       </svg>
       <span class="button__text">Сохранить на&nbsp;память</span>
     </button>
@@ -640,7 +647,7 @@
   <dialog class="dialog" id="dialog-save">
     <div class="dialog__message">
       <svg class="button__icon dialog__floppy" viewBox="0 0 29 28" xmlns="http://www.w3.org/2000/svg">
-        <use href="./svg/image-diskette.svg#image-diskette" />
+        <use href="#floppy-img" />
       </svg>
       <h2 class="dialog__text">Вставьте дискету,&nbsp;чтобы продолжить</h2>
     </div>
